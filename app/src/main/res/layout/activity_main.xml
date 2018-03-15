@@ -1,18 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.aula7.quisyojansanchezi056114.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/backgroundindex"
+            >
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_titulo"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhiteText"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_margin="15dp"
+                />
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_cantidad"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhiteText"
+                android:layout_below="@id/txt1"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_fecha"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhiteText"
+                android:layout_below="@id/txt2"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="0.5"
+                >
+
+                <TextView
+                    android:id="@+id/texto10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Ingresos"
+                     android:layout_margin="10dp"
+                    android:textColor="@color/colorSubText"
+                    />
+
+                <TextView
+                    android:id="@+id/texto11"
+                    android:layout_below="@id/texto10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$1.173.00"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <TextView
+                    android:id="@+id/texto12"
+                    android:layout_toRightOf="@id/texto10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+13%"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="@color/colorWhiteText"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="0.5"
+                >
+                <TextView
+                    android:id="@+id/texto20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Gastos"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorSubText"
+                    />
+
+                <TextView
+                    android:id="@+id/texto21"
+                    android:layout_below="@id/texto20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$3.747.000"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:id="@+id/texto22"
+                    android:layout_toRightOf="@id/texto20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+13%"
+                    android:layout_centerInParent="true"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorWhiteText"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/colorGray"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Historial de Transacciones"
+                android:id="@+id/Tran"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mas"
+                android:id="@+id/Mass"
+                android:layout_marginLeft="140dp"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arrow"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

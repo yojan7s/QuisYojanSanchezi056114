@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">QuisYojanSanchezi056114</string>
+    <string name="app_name">QuisYojanS</string>
+    <string name="app_opciones">Mas Opciones</string>
+    <string name="app_titulo">FINANCIAR</string>
+    <string name="app_cantidad">$7.963.420</string>
+    <string name="app_fecha">Mar, 15-22, 2018</string>
 </resources>
